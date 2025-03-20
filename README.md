@@ -14,6 +14,13 @@ Includes:
     built with [Antora](https://antora.org/),
     published at [conforma.dev/docs][conforma-docs]
 
+## Requirements
+
+* Go version >= 1.23
+* hugo (`dnf install hugo`)
+* entr (`dnf install entr`)
+* Must have cloned "ec-cli", "ec-policies", "user-guide", and "enterprise-contract-controller" repositories at the same level as this repo ("conforma.github.io")
+
 ## Live reload preview
 
 To run the preview of the website as changes are made to files within this
