@@ -71,7 +71,7 @@ We employ SLSA tooling to generate provenance. This helps track the build proces
 EC Action Validate works by assessing your container images against a set of validation checks. You can customize these checks through a policy to align with the specific security and compliance guidelines of your organization or industry. Whether the image passes or fails, you'll receive a GitHub summary output, and additional logs will be available in YAML format within the action.
 ```yaml
 - name: Validate image (keyless)
-  uses: enterprise-contract/action-validate-image@v1.0.31
+  uses: conforma/action-validate-image@v1.0.31
   with:
     image: ${{ needs.build.outputs.image }}@${{ needs.build.outputs.digest }}
     identity: https:\/\/github\.com\/(slsa-framework\/slsa-github-generator|${{ github.repository_owner }}\/${{ github.event.repository.name }})\/
@@ -102,7 +102,7 @@ Upon successful validation, this step promotes the image by pushing the latest v
 Here is a version of the EC Action Validate that verifies artifacts signed by cosign with long-lived signing secrets. This method uses a public key, stored in a secret variable, to verify the image signature, thereby ensuring its integrity through a three-stage validation process: Signature Verification, Attestation Verification, and Policy Compliance.
 ```yaml
 - name: Validate image (long-lived)
-  uses: enterprise-contract/action-validate-image@v1.0.31
+  uses: conforma/action-validate-image@v1.0.31
   with:
     image: quay.io/konflux-ci/ec-golden-image:latest
     key: ${{ vars.PUBLIC_KEY }}
@@ -121,4 +121,4 @@ By using either keyless or long-lived authentication methods, you can tailor EC 
 
 EC Validate is a GitHub Action aimed at elevating the security and compliance of your container images right within your GitHub workflow. By offering a range of authentication methods and customizable or defined policies, this action ensures that only validated and compliant images make it to deployment. It's a solution for organizations looking to adhere to organizational and industry standards while automating their pipelines within GitHub.
 
-Interested in learning more? Visit the EC Validate action in [GitHub's Market Place](https://github.com/marketplace/actions/ec-validate) for a user guide. If you would like to see the code, feel free to explore [our GitHub repository](https://github.com/enterprise-contract/action-validate-image).
+Interested in learning more? Visit the EC Validate action in [GitHub's Market Place](https://github.com/marketplace/actions/ec-validate) for a user guide. If you would like to see the code, feel free to explore [our GitHub repository](https://github.com/conforma/action-validate-image).
