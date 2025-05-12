@@ -583,10 +583,6 @@ p.big {
     margin: 1em 0.5em;
 }
 
-.hero-links h3.button#download{
-  margin-bottom: 5px;
-}
-
 .hero h2 {
   font-size: 1.2em;
   color: var(--ec-icon-purple);
