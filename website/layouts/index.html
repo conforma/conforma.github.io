@@ -2,6 +2,9 @@
 <html{{ with .Site.LanguageCode }} lang="{{ . }}"{{ end }} class="light wide">
   <head>
     {{ partial "head.html" . }}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   </head>
   <body class="article">
     {{ partial "header.html" . }}
@@ -18,8 +21,6 @@
 
           <div class="hero-intro">
             <p>Securely verify supply chain artifacts, and enforce policies about how they were built and tested, in a manageable, scalable, and declarative way.</p>
-
-            <p class="announcement">Note: Conforma was previously known as "Enterprise Contract", often abbreviated as "EC". Please bear with us as we update the documentation and other resources to use the new name.</p>
           </div>
 
           <div class="hero-links">{{ .Content }}</div>
@@ -51,7 +52,7 @@
 
           </div>
         </div>
-        <div class="divider">
+        <div class="divider d1">
           {{ partial "svg-wave-divider.html"}}
         </div>
         <div class="blog-excerpts">
@@ -64,15 +65,15 @@
 
             {{/* This div is not really for pagination but the CSS does what we want and also I'm lazy */}}
             <div class="pagination-centered">
-              <div class="pagination pagination-default" style="padding: 3em 0; opacity: 70%;">
+              <div class="pagination pagination-default">
                 {{/* Note the hard coded url here should match what's in website/config/_default/menu.toml) */}}
-                <a href="/posts">More articles &hellip;</a>
+                <a href="/posts" class="button">More articles &hellip;</a>
               </div>
             </div>
-
           </article>
         </div>
-        <div class="divider">
+
+        <div class="divider d2">
           {{ partial "svg-wave-divider.html"}}
         </div>
       </main>
