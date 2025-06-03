@@ -44,7 +44,7 @@
   [[main]]
     name = 'Policies'
     parent = 'Documentation'
-    url = '/docs/ec-policies/release_policy.html'
+    url = '/docs/policy/release_policy.html'
     weight = 60
 
   [[main]]

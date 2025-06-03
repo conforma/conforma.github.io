@@ -26,7 +26,7 @@ site:
   robots: allow
 content:
   sources:
-    - url: https://github.com/enterprise-contract/ec-policies.git
+    - url: https://github.com/conforma/policy.git
       start_path: antora/docs
 
     - url: https://github.com/enterprise-contract/ec-cli.git
