@@ -18,7 +18,7 @@ With `hack/local-build.sh` script performs this by creating a temporary playbook
 file pointing to the local clones of the mentioned repositories if those
 repositories are located in the `../<repository>` for a
 `https://github.com/<org>/<repository>.git` git URL. For example, it is expected
-that the `ec-policies` repository is located at `../ec-policies`. If the local
+that the `policy` repository is located at `../policy`. If the local
 repository is on a different path create a symlink pointing from
 `../<repository>` to that path.
 

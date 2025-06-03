@@ -6,7 +6,7 @@ const customTitles = {
   "user-guide": "About",
   "ec-cli": "CLI Reference",
   "ecc": "Configuration Reference",
-  "ec-policies": "Policies",
+  "policy": "Policies",
 }
 
 module.exports = (component) => {

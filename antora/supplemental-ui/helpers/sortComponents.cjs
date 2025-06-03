@@ -8,7 +8,7 @@ const componentOrder = [
   "user-guide",
   "ec-cli",
   "ecc",
-  "ec-policies",
+  "policy",
 ]
 
 const componentSorter = function (a, b) {

@@ -111,7 +111,7 @@ _bacon_attestations := [attestation |
 ]
 ```
 
-(Check out the [docs](https://conforma.dev/docs/ec-policies/authoring.html) for more
+(Check out the [docs](https://conforma.dev/docs/policy/authoring.html) for more
 information on how to author policy rules 🔥)
 
 Next, we create a policy configuration, `policy.yaml`, to use the policy rules above.

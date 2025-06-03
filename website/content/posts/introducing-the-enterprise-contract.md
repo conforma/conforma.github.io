@@ -141,7 +141,7 @@ format. From its success, we can tell that the image signature and the image att
 provided public key. We can also see some metadata information about the found attestations.
 
 Let’s take a step further and say we want to validate the SLSA Provenance attestations with a
-certain set of policy rules. The [ec-policies](https://github.com/enterprise-contract/ec-policies)
+certain set of policy rules. The [policy](https://github.com/conforma/policy)
 repo has a set of useful rego policies, so let’s use that.
 
 Create a policy file called `policy.yaml` with the following content:
@@ -150,10 +150,10 @@ Create a policy file called `policy.yaml` with the following content:
 sources:
 - name: policies
   data:
-  - git::github.com/enterprise-contract/ec-policies.git//data?ref=bca7d72
+  - git::github.com/conforma/policy.git//data?ref=bca7d72
   policy:
-  - git::github.com/enterprise-contract/ec-policies.git//policy/lib?ref=bca7d72
-  - git::github.com/enterprise-contract/ec-policies.git//policy/release?ref=bca7d72
+  - git::github.com/conforma/policy.git//policy/lib?ref=bca7d72
+  - git::github.com/conforma/policy.git//policy/release?ref=bca7d72
 configuration:
   include:
   - slsa_source_version_controlled
@@ -172,7 +172,7 @@ directly from git.
 
 In configuration, we specify what to include from the sources. (Omit this to include all!) In this
 example, the policy rules from the
-[slsa_source_version_controlled](https://conforma.dev/docs/ec-policies/release_policy.html#slsa_source_version_controlled_package)
+[slsa_source_version_controlled](https://conforma.dev/docs/policy/release_policy.html#slsa_source_version_controlled_package)
 package are included. Check out the
 [docs](https://conforma.dev/docs/ec-cli/configuration.html) for more information.
 
@@ -253,11 +253,11 @@ policy:
     -----END PUBLIC KEY-----
   sources:
   - data:
-    - git::github.com/enterprise-contract/ec-policies.git//data?ref=bca7d72
+    - git::github.com/conforma/policy.git//data?ref=bca7d72
     name: policies
     policy:
-    - git::github.com/enterprise-contract/ec-policies.git//policy/lib?ref=bca7d72
-    - git::github.com/enterprise-contract/ec-policies.git//policy/release?ref=bca7d72
+    - git::github.com/conforma/policy.git//policy/lib?ref=bca7d72
+    - git::github.com/conforma/policy.git//policy/release?ref=bca7d72
 success: true
 ```
 

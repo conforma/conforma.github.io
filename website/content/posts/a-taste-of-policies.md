@@ -67,8 +67,8 @@ identity:
 
 sources:
   - policy:
-      - github.com/enterprise-contract/ec-policies//policy/lib
-      - github.com/enterprise-contract/ec-policies//policy/release
+      - github.com/conforma/policy//policy/lib
+      - github.com/conforma/policy//policy/release
     ruleData:
       allowed_gh_workflow_repos:
         - lcarva/festoji
@@ -86,7 +86,7 @@ configuration:
 
 This policy moves the certificate flags to the policy itself. It also specifies certain policy rules
 to be executed. Here we are including some of the existing Enterprise Contract policy rules,
-[github_certificate](https://conforma.dev/docs/ec-policies/release_policy.html#github_certificate_package).
+[github_certificate](https://conforma.dev/docs/policy/release_policy.html#github_certificate_package).
 These policy rules rely on certain data to be provided, e.g. the expected GitHub Workflow
 repository. With this policy saved as `policy.yaml`, we can simplify how the CLI is invoked:
 
@@ -189,7 +189,7 @@ deny contains result if {
 This defines a single policy rule that verifies the materials section of the SLSA Provenance contain
 the expected git repository. The Enterprise Contract relies on rego annotations to provide
 additional information about each of the policy rules. See the
-[docs](https://conforma.dev/docs/ec-policies/authoring.html) for more information.
+[docs](https://conforma.dev/docs/policy/authoring.html) for more information.
 
 Let's add this rule to our previous policy:
 
@@ -202,8 +202,8 @@ identity:
 
 sources:
   - policy:
-      - github.com/enterprise-contract/ec-policies//policy/lib
-      - github.com/enterprise-contract/ec-policies//policy/release
+      - github.com/conforma/policy//policy/lib
+      - github.com/conforma/policy//policy/release
     ruleData:
       allowed_gh_workflow_repos:
         - lcarva/festoji
