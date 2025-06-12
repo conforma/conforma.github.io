@@ -172,7 +172,7 @@ directly from git.
 
 In configuration, we specify what to include from the sources. (Omit this to include all!) In this
 example, the policy rules from the
-[slsa_source_version_controlled](https://conforma.dev/docs/policy/release_policy.html#slsa_source_version_controlled_package)
+[slsa_source_version_controlled](https://conforma.dev/docs/policy/packages/release_slsa_source_version_controlled.html)
 package are included. Check out the
 [docs](https://conforma.dev/docs/ec-cli/configuration.html) for more information.
 
