@@ -86,7 +86,7 @@ configuration:
 
 This policy moves the certificate flags to the policy itself. It also specifies certain policy rules
 to be executed. Here we are including some of the existing Enterprise Contract policy rules,
-[github_certificate](https://conforma.dev/docs/policy/release_policy.html#github_certificate_package).
+[github_certificate](https://conforma.dev/docs/policy/packages/release_github_certificate.html).
 These policy rules rely on certain data to be provided, e.g. the expected GitHub Workflow
 repository. With this policy saved as `policy.yaml`, we can simplify how the CLI is invoked:
 
