@@ -27,7 +27,7 @@ processes or any other automated workflow in GitHub.
 Interested in learning more? Visit the EC Validate action in [GitHub's Market Place](https://github.com/marketplace/actions/ec-validate) for a user guide.
 
 ## The `Golden-Container` Build Pipeline Example using EC Validate
-Imagine you're operating within a [build & release workflow](https://GitHub.com/enterprise-contract/golden-container/blob/main/.github/workflows/release.yaml). You've successfully set up a pipeline that takes care of building, digitally signing, generating an SBOM, and adding provenance data. However, you're missing a crucial step in validating the container image. This is where the `EC Validate` comes into play, ensuring your container images meet the required security and compliance standards before deployment.
+Imagine you're operating within a [build & release workflow](https://github.com/conforma/golden-container/blob/main/.github/workflows/release.yaml). You've successfully set up a pipeline that takes care of building, digitally signing, generating an SBOM, and adding provenance data. However, you're missing a crucial step in validating the container image. This is where the `EC Validate` comes into play, ensuring your container images meet the required security and compliance standards before deployment.
 
 Now, let’s go over the initial steps of this workflow before actually diving into it.
 

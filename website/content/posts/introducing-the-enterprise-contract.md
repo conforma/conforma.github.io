@@ -102,7 +102,7 @@ you want a configuration that can be shared across different teams?
 This is where the Enterprise Contract comes into play!
 
 The Enterprise Contract can be evaluated via the
-[ec-cli](https://github.com/enterprise-contract/ec-cli). The simplest example involves using an
+[ec-cli](https://github.com/conforma/cli). The simplest example involves using an
 empty policy:
 
 ```yaml
@@ -301,4 +301,4 @@ keyless workflows which will increase the number of supported use cases.
 
 If you want to learn more, check out our
 [docs](https://conforma.dev/docs/) and browse [the
-source](https://github.com/enterprise-contract)!
+source](https://github.com/conforma)!
