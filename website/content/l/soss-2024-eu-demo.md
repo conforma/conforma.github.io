@@ -1,3 +1,3 @@
 ---
-redirect: https://github.com/enterprise-contract/demos/tree/main/2024-SOSS-EU
+redirect: https://github.com/conforma/demos/tree/main/2024-SOSS-EU
 ---
