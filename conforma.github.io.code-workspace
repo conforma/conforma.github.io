@@ -4,13 +4,13 @@
 			"path": "."
 		},
 		{
-			"path": "../ec-cli/reference-antora-extension"
+			"path": "../cli/reference-antora-extension"
 		},
 		{
-			"path": "../ec-cli/rego-antora-extension"
+			"path": "../cli/rego-antora-extension"
 		},
 		{
-			"path": "../ec-cli/tekton-task-antora-extension"
+			"path": "../cli/tekton-task-antora-extension"
 		},
 		{
 			"path": "../policy/antora/policy-antora-extension"

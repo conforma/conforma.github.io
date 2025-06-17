@@ -38,7 +38,7 @@ there are several extensions defined as development dependencies in
 
 To make changes locally to the extensions run `npm run dev:setup` script in the
 `antora` directory. The script assumes that the local clones of
-[ec-cli](https://github.com/enterprise-contract/ec-cli/) and
+[ec](https://github.com/conforma/cli/) and
 [policy](https://github.com/conforma/policy/) repositories
 are present in the directory above this one. The outcome of running the
 `dev:setup` script is that local copies of the NPM packages that comprise the

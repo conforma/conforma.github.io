@@ -102,7 +102,7 @@ you want a configuration that can be shared across different teams?
 This is where the Enterprise Contract comes into play!
 
 The Enterprise Contract can be evaluated via the
-[ec-cli](https://github.com/enterprise-contract/ec-cli). The simplest example involves using an
+[cli](https://github.com/conforma/cli). The simplest example involves using an
 empty policy:
 
 ```yaml
@@ -136,7 +136,7 @@ policy:
 success: true
 ```
 
-The ec-cli has different output formats. I chose the one that displays the full report in YAML
+The cli has different output formats. I chose the one that displays the full report in YAML
 format. From its success, we can tell that the image signature and the image attestations match the
 provided public key. We can also see some metadata information about the found attestations.
 
@@ -166,7 +166,7 @@ rekorUrl: ""
 ```
 
 The sources attribute specifies a list of rego policy rules and corresponding [data
-sources](https://conforma.dev/docs/ec-cli/configuration.html#_data_sources). Each data and
+sources](https://conforma.dev/docs/cli/configuration.html#_data_sources). Each data and
 policy source can be specified via a different set of transports. Here we choose to use them
 directly from git.
 
@@ -174,12 +174,12 @@ In configuration, we specify what to include from the sources. (Omit this to inc
 example, the policy rules from the
 [slsa_source_version_controlled](https://conforma.dev/docs/policy/packages/release_slsa_source_version_controlled.html)
 package are included. Check out the
-[docs](https://conforma.dev/docs/ec-cli/configuration.html) for more information.
+[docs](https://conforma.dev/docs/cli/configuration.html) for more information.
 
 We can also specify the public key and rekor URL directly in this file. This helps consolidate all
 the input parameters required for validating images.
 
-Let’s run the ec-cli again with this policy in place:
+Let’s run the cli again with this policy in place:
 
 ```bash
 $ ec validate image --policy policy.yaml --image $IMAGE --output yaml --info
@@ -279,7 +279,7 @@ components:
   - containerImage: quay.io/example/three:latest@sha256:...
 ```
 
-Then run the ec-cli:
+Then run the cli:
 
 ```bash
 $ ec validate image --policy policy.yaml --file-path components.yaml --output yaml

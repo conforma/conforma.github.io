@@ -4,7 +4,7 @@
 
 const customTitles = {
   "user-guide": "About",
-  "ec-cli": "CLI Reference",
+  "cli": "CLI Reference",
   "ecc": "Configuration Reference",
   "policy": "Policies",
 }
