@@ -6,7 +6,7 @@ const objectValues = function (obj) {
 
 const componentOrder = [
   "user-guide",
-  "ec-cli",
+  "cli",
   "ecc",
   "policy",
 ]

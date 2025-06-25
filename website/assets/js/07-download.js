@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         return
     }
     try {
-        const response = await fetch('https://api.github.com/repos/enterprise-contract/ec-cli/releases/tags/snapshot');
+        const response = await fetch('https://api.github.com/repos/conforma/cli/releases/tags/snapshot');
         const snapshot = await response.json();
         const uap = new UAParser();
         const os = uap.getOS().name.replace('macOS', 'darwin').toLowerCase();

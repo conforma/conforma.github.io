@@ -215,7 +215,7 @@ come from this particular branch in this particular repository.
 validate:
   stage: promote
   image:
-    name: quay.io/enterprise-contract/ec-cli:snapshot
+    name: quay.io/conforma/cli:snapshot
     entrypoint: [""]
   variables:
     DOCKER_IMAGE_NAME: $CI_REGISTRY_IMAGE:$CI_COMMIT_SHORT_SHA
@@ -356,7 +356,7 @@ secure:
 validate:
   stage: promote
   image:
-    name: quay.io/enterprise-contract/ec-cli:snapshot
+    name: quay.io/conforma/cli:snapshot
     entrypoint: [""]
   variables:
     DOCKER_IMAGE_NAME: $CI_REGISTRY_IMAGE:$CI_COMMIT_SHORT_SHA
