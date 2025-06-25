@@ -76,7 +76,7 @@ EC Action Validate works by assessing your container images against a set of val
     image: ${{ needs.build.outputs.image }}@${{ needs.build.outputs.digest }}
     identity: https:\/\/github\.com\/(slsa-framework\/slsa-github-generator|${{ github.repository_owner }}\/${{ github.event.repository.name }})\/
     issuer: https://token.actions.GitHubusercontent.com
-    policy: github.com/enterprise-contract/config//github-default
+    policy: github.com/conforma/config//github-default
 ```
 - **`image`**: Specifies the container image to be validated. It uses the image and digest output from a previous build step in the workflow.
 
@@ -84,7 +84,7 @@ EC Action Validate works by assessing your container images against a set of val
 
 - **`issuer`**: Specifies the OIDC issuer of the token used for authentication. Here, it's set to GitHub's token actions issuer URL.
 
-- **`policy`**: Points to the policy configuration to use for validation checks. The policy can be either [predefined](https://github.com/enterprise-contract/config) or a custom policy.
+- **`policy`**: Points to the policy configuration to use for validation checks. The policy can be either [predefined](https://github.com/conforma/config) or a custom policy.
 
 
 ### Promote Image
@@ -106,13 +106,13 @@ Here is a version of the EC Action Validate that verifies artifacts signed by co
   with:
     image: quay.io/konflux-ci/ec-golden-image:latest
     key: ${{ vars.PUBLIC_KEY }}
-    policy: github.com/enterprise-contract/config//slsa3
+    policy: github.com/conforma/config//slsa3
     extra-params: --ignore-rekor
 ```
 
 - **`image`**: Similar to keyless, specifies the container image to be validated.
 - **`key`**: The public key used for long-lived authentication.
-- **`policy`**: Policy configuration, which can be either [predefined](https://github.com/enterprise-contract/config) or custom.
+- **`policy`**: Policy configuration, which can be either [predefined](https://github.com/conforma/config) or custom.
 - **`extra-params`**: Additional parameters for the action, such as ignoring Rekor for this image. More can be found [here](https://conforma.dev/docs/cli/ec_validate_image.html#_options)
 
 By using either keyless or long-lived authentication methods, you can tailor EC Action Validate to meet the specific security requirements of your project.
