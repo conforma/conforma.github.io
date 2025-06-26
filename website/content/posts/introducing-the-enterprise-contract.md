@@ -301,4 +301,4 @@ keyless workflows which will increase the number of supported use cases.
 
 If you want to learn more, check out our
 [docs](https://conforma.dev/docs/) and browse [the
-source](https://github.com/enterprise-contract)!
+source](https://github.com/conforma)!

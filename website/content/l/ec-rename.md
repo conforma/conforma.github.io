@@ -1,3 +1,3 @@
 ---
-redirect: https://github.com/enterprise-contract/community/issues/53
+redirect: https://github.com/conforma/community/issues/53
 ---
