@@ -9,12 +9,12 @@
     weight = 11
 
   [[main]]
-    name = 'Contribute'
-    url = '/contribute'
+    name = 'Documentation'
     weight = 12
 
   [[main]]
-    name = 'Documentation'
+    name = 'Contribute'
+    url = '/contribute'
     weight = 13
 
   [[main]]
@@ -45,6 +45,12 @@
     name = 'Policies'
     parent = 'Documentation'
     url = '/docs/policy/release_policy.html'
+    weight = 50
+
+  [[main]]
+    name = 'Resources'
+    parent = 'Documentation'
+    url = '/resources'
     weight = 60
 
   [[main]]
