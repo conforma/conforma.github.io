@@ -3,7 +3,7 @@ help:
 	@grep '[[:space:]]##[[:space:]]' Makefile | sed 's/^\(.*\):.*##\(.*\)$$/#\2\nmake \1\n/'
 
 hugo-server: ## Run hugo server for website hacking
-	@cd website && hugo server
+	@cd website && hugo server --buildFuture
 
 preview: preview-antora hugo-server ## Run hugo server for website hacking with pre-built antora docs
 
