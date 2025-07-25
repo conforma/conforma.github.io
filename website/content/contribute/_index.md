@@ -1,3 +1,4 @@
 ---
-kind: page
+layout: contribute
 ---
+
