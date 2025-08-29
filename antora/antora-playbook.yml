@@ -51,3 +51,4 @@ antora:
 asciidoc:
   extensions:
     - '@asciidoctor/tabs'
+    - './extensions/mermaid.js'
