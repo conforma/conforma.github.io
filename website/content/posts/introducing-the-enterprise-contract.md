@@ -265,9 +265,9 @@ Notice the additional information in the output. It contains a list of policy ru
 successfully evaluated as well as the details for the policy used.
 
 To improve reusability, the `policy.yaml` file can be stored in your Kubernetes clusters via the
-[EnterpriseContractPolicy](https://github.com/enterprise-contract/enterprise-contract-controller)
+[EnterpriseContractPolicy](https://github.com/conforma/crds)
 custom resource, see
-[example](https://github.com/enterprise-contract/enterprise-contract-controller/blob/main/config/samples/appstudio.redhat.com_v1alpha1_enterprisecontractpolicy.yaml).
+[example](https://github.com/conforma/crds/blob/main/config/samples/appstudio.redhat.com_v1alpha1_enterprisecontractpolicy.yaml).
 
 Say now that you have a group of images, an “application snapshot”, that must all pass validation.
 We can do this in one shot by creating the components.yaml file:

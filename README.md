@@ -19,7 +19,7 @@ Includes:
 * Go version >= 1.23
 * hugo (`dnf install hugo`)
 * entr (`dnf install entr`)
-* Must have cloned "ec-cli", "ec-policies", "user-guide", and "enterprise-contract-controller" repositories at the same level as this repo ("conforma.github.io")
+* Must have cloned "conforma/cli", "conforma/policy", "conforma/user-guide", and "conforma/crds" repositories at the same level as this repo ("conforma.github.io")
 
 ## Live reload preview
 
