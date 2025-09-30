@@ -32,7 +32,7 @@ content:
     - url: https://github.com/conforma/cli.git
       start_path: docs
 
-    - url: https://github.com/enterprise-contract/enterprise-contract-controller.git
+    - url: https://github.com/conforma/crds.git
       start_path: docs
 
     - url: https://github.com/conforma/user-guide.git
