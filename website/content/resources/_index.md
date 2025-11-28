@@ -4,7 +4,7 @@ title: Resources
 
 Whether you're just getting started with supply chain security or looking to deepen your understanding of policy enforcement in container workflows, these resources provide valuable insights from industry experts and real-world implementations.
 
-These conference presentations, demos, and educational videos showcase how organizations are using Conforma to secure their software supply chains.
+These conference presentations, demos, educational videos and articles showcase how organizations are using Conforma to secure their software supply chains.
 
 ## Enforcing Organization Policies with Enterprise Contract
 
@@ -92,3 +92,18 @@ This presentation showcases how Konflux integrates with Conforma to provide both
 - Introduction to Konflux for secure and automated CI
 - Demo: onboarding, testing, vulnerability scanning, and custom policy-based gating (via Conforma)
 - Empowering teams to shift left on security through policy-driven pipelines
+
+## How we use software provenance at Red Hat
+
+**Author:** Ralph Bean, Red Hat  
+**Format:** Article  
+**Link:** [Read on developers.redhat.com](https://developers.redhat.com/articles/2025/05/15/how-we-use-software-provenance-red-hat)  
+
+This article explores how Red Hat's Konflux platform uses software provenance to establish trust in build processes. Key topics include:
+
+- Understanding software provenance and in-toto attestations
+- The neutral observer/attester pattern for verifiable build records
+- How Conforma validates artifacts through policy-based verification
+- Practical examples of attestation data and usage
+
+*Ideal for developers looking to understand how detailed provenance tracking enables trustworthy software supply chains.*
