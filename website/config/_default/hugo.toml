@@ -7,3 +7,6 @@ copyright = "Red Hat, Inc. All rights reserved."
 relativeURLs = true
 staticDir = ["static", "antora"]
 paginate = 12
+# Added to enable embedding html lists in markdown tables.
+[markup.goldmark.renderer]
+unsafe = true
