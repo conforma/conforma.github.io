@@ -54,6 +54,18 @@
     weight = 60
 
   [[main]]
+    name = 'Tools'
+    parent = 'Documentation'
+    url = '/tools'
+    weight = 70
+  
+  [[main]]
+    name = 'Tips & Tricks'
+    parent = 'Documentation'
+    url = '/tips-and-tricks'
+    weight = 80
+
+  [[main]]
     name = 'Source Code'
     url = 'https://github.com/conforma'
     weight = 13
