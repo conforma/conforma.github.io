@@ -69,7 +69,6 @@ The Conforma organization maintains several repositories that contain utility sc
 - [CRDs Repository](#crds-repository)
 - [Hacks Repository](#hacks-repository)
 - [Infra-Deployments-CI Repository](#infra-deployments-ci-repository)
-- [Knative-Service Repository](#knative-service-repository)
 - [Policy Repository](#policy-repository)
 - [Review-Rot Repository](#review-rot-repository)
 - [Tekton-Catalog Repository](#tekton-catalog-repository)
