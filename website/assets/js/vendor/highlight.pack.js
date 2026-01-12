@@ -498,3 +498,21 @@ className:"punctuation",relevance:0},{scope:"operator",
 match:r.either("==","=","\\+","-","<=","<",">=",">","!=","\\|","\\*")},{
 scope:"string",begin:"`",end:"`"},e.HASH_COMMENT_MODE,{begin:/import rego\.v1/,
 keywords:"import",relevance:10}]}}})();hljs.registerLanguage("rego",e)})();
+
+/*! Custom highlight Pack for Conforma output. Simulate
+ * how it looks in the terminal with the ansi text color. */
+(function () {
+  'use strict';
+  hljs.registerLanguage('ec', function statusHighlight() {
+    return {
+      name: 'Conforma output',
+      case_insensitive: false,
+      contains: [
+        { begin: /✕ \[Violation\]/, className: 'red'         },
+        { begin: /› \[Warning\]/,   className: 'yellow'      },
+        { begin: /✓ \[Success\]/,   className: 'green'       },
+        { begin: /^\$/,             className: 'bash-prompt' },
+      ]
+    };
+  });
+})();
