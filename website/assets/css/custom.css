@@ -584,6 +584,21 @@ p.big {
   }
 
 }
+
+/* Stack the hero-link (download) buttons on small screens */
+@media screen and (max-width: 768px) {
+  .hero-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .hero-links h3.button {
+    margin: 0.5rem 0;
+    width: 100%;
+    max-width: 220px;
+    text-align: left;
+  }
+}
 /* end index page hero section */
 
 /* begin front page divider */
