@@ -153,7 +153,18 @@ body.article {
 
 footer.footer {
   /* Cosmetic tweak so the footer color continues to the bottom for short pages */
-  padding-bottom: 15em;
+  padding: 12rem 1.5rem 1.5rem 1.5rem;
+
+  /* Cosmetic tweak so the footer background is visible at the bottom of the final wavy divider */
+  margin-top: -2em;
+}
+
+footer.footer p {
+  font-size: 80%;
+  opacity: 0.6;
+  margin: 2rem auto;
+  text-align: center;
+  max-width: 35rem;
 }
 
 h3.button {
@@ -604,6 +615,7 @@ p.big {
 /* begin front page divider */
 .divider {
   min-height: 80px;
+  background-color: transparent;
 }
 
 .flowing {
