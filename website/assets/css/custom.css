@@ -450,7 +450,7 @@ p.big {
   max-width: var(--doc-max-width--landing);
   margin: 2rem auto;
   padding: 0 20px 0 20px;
-  min-height: calc(100vh - 183px);
+  /* min-height: calc(100vh - 183px); */
 }
 
 .hero-header {

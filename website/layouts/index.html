@@ -58,7 +58,7 @@
         <div class="divider">
           {{ partial "svg-wave-divider.html"}}
         </div>
-        <div class="blog-excerpts">
+        <div class="blog-excerpts" style="padding-top: 2em; padding-bottom: 0em;">
           <h2>Recently Published</h2>
           <article class="doc">
             {{ $posts := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
@@ -68,7 +68,7 @@
 
             {{/* This div is not really for pagination but the CSS does what we want and also I'm lazy */}}
             <div class="pagination-centered">
-              <div class="pagination pagination-default" style="padding: 3em 0; opacity: 70%;">
+              <div class="pagination pagination-default" style="padding: 2.5em 0 0 0; opacity: 70%;">
                 {{/* Note the hard coded url here should match what's in website/config/_default/menu.toml) */}}
                 <a href="/posts">More articles &hellip;</a>
               </div>
