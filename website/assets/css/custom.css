@@ -475,12 +475,9 @@ p.big {
 }
 
 .hero-intro p.announcement {
-  margin-top: 2em;
   padding: 1em;
-  border: solid 1px var(--ec-icon-purple);
-  border-radius: 0.25em;
   font-style: italic;
-  font-size: 90%;
+  font-size: 75%;
   color: var(--ec-icon-purple);
 }
 
