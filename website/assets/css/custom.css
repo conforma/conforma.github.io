@@ -189,13 +189,6 @@ h3.button {
   stroke: white;
 }
 
-a.all-downloads {
-  display: block;
-  position: absolute;
-  color: var(--color-gray-30);
-  padding-left: 1rem;
-}
-
 p.big {
     font-size: 115%;
 }
@@ -517,29 +510,33 @@ p.big {
   line-height: var(--doc-line-height);
 }
 
-a.all-downloads{
-  position:relative!important;
-  padding:0;
-  margin: 0;
+.#all-downloads {
+  /* This is hidden to begin with, see 07-download.js */
+  display: none!important;
 }
 
-.hero-links{
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-columns: auto;
+.hero-links {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  gap: 1rem;
   text-align: center;
+  padding-bottom: 2.5em;
 }
 
 .hero-links h3.button {
   padding-top: 10px;
-  margin: 0 auto;
-  margin-top: 1em;
-  margin-bottom: 2em;
+  margin: 1em 0.5em;
 }
 
-.hero-links h3.button#download{
-  margin-bottom: 5px;
+.hero-links h3.button a {
+  white-space: nowrap;
+}
+
+.hero-links h3.button:hover {
+  transform: translateY(-1px);
+  background-color: var(--ec-icon-purple);
 }
 
 .hero h2 {
