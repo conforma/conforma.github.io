@@ -3,7 +3,7 @@ languageCode = 'en-us'
 title = 'Conforma'
 theme = 'github.com/basil/antora-default-ui-hugo-theme'
 publishDir = '../public'
-copyright = "Red Hat, Inc. All rights reserved."
+copyright = 'Red Hat, Inc. All rights reserved. <a href="https://github.com/conforma/conforma.github.io">Source</a>.'
 relativeURLs = true
 staticDir = ["static", "antora"]
 paginate = 12

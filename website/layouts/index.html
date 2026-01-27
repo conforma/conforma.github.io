@@ -19,7 +19,6 @@
           <div class="hero-intro">
             <p>Securely verify supply chain artifacts, and enforce policies about how they were built and tested, in a manageable, scalable, and declarative way.</p>
 
-            <p class="announcement">Note: Conforma was previously known as "Enterprise Contract", often abbreviated as "EC". Please bear with us as we update the documentation and other resources to use the new name.</p>
           </div>
 
           <div class="hero-links">{{ .Content }}</div>
@@ -51,10 +50,32 @@
 
           </div>
         </div>
+
+          <div class="hero-intro">
+            <p class="announcement">Note that Conforma was originally known as "Enterprise Contract". You might find it still refered to as "Enterprise Contract", or "EC" in some of the older content on this website.</p>
+          </div>
+
         <div class="divider">
           {{ partial "svg-wave-divider.html"}}
         </div>
-        <div class="blog-excerpts">
+
+        {{/* Recycling the hero-intro class even though this is not the intro */}}
+        <div class="hero-intro">
+          <p class="mission"><span>Vision:</span> A world where every
+            software supply chain includes robust policy enforcement and secure artifact
+            verification by default.</p>
+
+          <p class="mission"><span>Mission:</span> To create user-friendly,
+            standards-based tooling to empower software, release, and security engineers to
+            consistently deliver artifacts that verifiably and transparently meet business,
+            quality, and security policies.</p>
+        </div>
+
+        <div class="divider">
+          {{ partial "svg-wave-divider.html"}}
+        </div>
+
+        <div class="blog-excerpts" style="padding-top: 2em; padding-bottom: 0em;">
           <h2>Recently Published</h2>
           <article class="doc">
             {{ $posts := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
@@ -64,7 +85,7 @@
 
             {{/* This div is not really for pagination but the CSS does what we want and also I'm lazy */}}
             <div class="pagination-centered">
-              <div class="pagination pagination-default" style="padding: 3em 0; opacity: 70%;">
+              <div class="pagination pagination-default" style="padding: 2.5em 0 0 0; opacity: 70%;">
                 {{/* Note the hard coded url here should match what's in website/config/_default/menu.toml) */}}
                 <a href="/posts">More articles &hellip;</a>
               </div>

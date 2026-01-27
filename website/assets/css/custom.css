@@ -153,7 +153,18 @@ body.article {
 
 footer.footer {
   /* Cosmetic tweak so the footer color continues to the bottom for short pages */
-  padding-bottom: 15em;
+  padding: 12rem 1.5rem 1.5rem 1.5rem;
+
+  /* Cosmetic tweak so the footer background is visible at the bottom of the final wavy divider */
+  margin-top: -2em;
+}
+
+footer.footer p {
+  font-size: 80%;
+  opacity: 0.6;
+  margin: 2rem auto;
+  text-align: center;
+  max-width: 35rem;
 }
 
 h3.button {
@@ -187,13 +198,6 @@ h3.button {
 
 .button svg path {
   stroke: white;
-}
-
-a.all-downloads {
-  display: block;
-  position: absolute;
-  color: var(--color-gray-30);
-  padding-left: 1rem;
 }
 
 p.big {
@@ -446,7 +450,7 @@ p.big {
   max-width: var(--doc-max-width--landing);
   margin: 2rem auto;
   padding: 0 20px 0 20px;
-  min-height: calc(100vh - 183px);
+  /* min-height: calc(100vh - 183px); */
 }
 
 .hero-header {
@@ -475,13 +479,22 @@ p.big {
 }
 
 .hero-intro p.announcement {
-  margin-top: 2em;
   padding: 1em;
-  border: solid 1px var(--ec-icon-purple);
-  border-radius: 0.25em;
   font-style: italic;
-  font-size: 90%;
+  font-size: 75%;
   color: var(--ec-icon-purple);
+}
+
+.hero-intro p.mission {
+  padding: 1em;
+  font-style: italic;
+  font-size: 130%;
+  color: var(--ec-icon-purple);
+}
+
+.hero-intro p.mission span {
+  opacity: 0.3;
+  font-weight: bold;
 }
 
 .hero-highlights {
@@ -520,29 +533,33 @@ p.big {
   line-height: var(--doc-line-height);
 }
 
-a.all-downloads{
-  position:relative!important;
-  padding:0;
-  margin: 0;
+.#all-downloads {
+  /* This is hidden to begin with, see 07-download.js */
+  display: none!important;
 }
 
-.hero-links{
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-columns: auto;
+.hero-links {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  gap: 1rem;
   text-align: center;
+  padding-bottom: 2.5em;
 }
 
 .hero-links h3.button {
   padding-top: 10px;
-  margin: 0 auto;
-  margin-top: 1em;
-  margin-bottom: 2em;
+  margin: 1em 0.5em;
 }
 
-.hero-links h3.button#download{
-  margin-bottom: 5px;
+.hero-links h3.button a {
+  white-space: nowrap;
+}
+
+.hero-links h3.button:hover {
+  transform: translateY(-1px);
+  background-color: var(--ec-icon-purple);
 }
 
 .hero h2 {
@@ -590,18 +607,35 @@ a.all-downloads{
   }
 
 }
+
+/* Stack the hero-link (download) buttons on small screens */
+@media screen and (max-width: 768px) {
+  .hero-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .hero-links h3.button {
+    margin: 0.5rem 0;
+    width: 100%;
+    max-width: 220px;
+    text-align: left;
+  }
+}
 /* end index page hero section */
 
 /* begin front page divider */
 .divider {
-  min-height: 80px;
+  min-height: 40px;
+  background-color: transparent;
+  opacity: 0.8;
 }
 
 .flowing {
   display: block;
   width: 100%;
-  height: 60px;
-  max-height: 60px;
+  height: 20px;
+  max-height: 20px;
   margin: 0;
   z-index: 5;
   position: absolute;
@@ -626,7 +660,7 @@ g.parallax4 {
 }
 
 .parallax1>use {
-  animation: move-forever1 10s linear infinite;
+  animation: move-forever1 14s linear infinite;
 
   &:nth-child(1) {
     animation-delay: -2s;
@@ -634,7 +668,7 @@ g.parallax4 {
 }
 
 .parallax2>use {
-  animation: move-forever2 8s linear infinite;
+  animation: move-forever2 12s linear infinite;
 
   &:nth-child(1) {
     animation-delay: -2s;
@@ -642,7 +676,7 @@ g.parallax4 {
 }
 
 .parallax3>use {
-  animation: move-forever3 6s linear infinite;
+  animation: move-forever3 10s linear infinite;
 
   &:nth-child(1) {
     animation-delay: -2s;
@@ -650,7 +684,7 @@ g.parallax4 {
 }
 
 .parallax4>use {
-  animation: move-forever4 4s linear infinite;
+  animation: move-forever4 8s linear infinite;
 
   &:nth-child(1) {
     animation-delay: -2s;
