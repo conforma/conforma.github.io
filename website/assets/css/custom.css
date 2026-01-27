@@ -485,6 +485,18 @@ p.big {
   color: var(--ec-icon-purple);
 }
 
+.hero-intro p.mission {
+  padding: 1em;
+  font-style: italic;
+  font-size: 130%;
+  color: var(--ec-icon-purple);
+}
+
+.hero-intro p.mission span {
+  opacity: 0.3;
+  font-weight: bold;
+}
+
 .hero-highlights {
   display: grid;
   grid-template-columns: auto auto;
