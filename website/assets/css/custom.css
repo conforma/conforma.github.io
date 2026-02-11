@@ -97,9 +97,24 @@ code, kbd, pre {
   padding: 1em !important;
 }
 
+.hljs-red {
+  color: #ff5874;
+}
+.hljs-yellow {
+  color: #ecc48d;
+}
+.hljs-green {
+  color: #addb67;
+}
+.hljs-bash-prompt {
+  color: #dcdcaa;
+  font-weight: bold;
+}
+
 .doc pre.highlightjs {
   font-size: .9rem;
-  padding-top: 0.75em;
+  padding-top: 0.3em;
+  padding-bottom: 0.5em;
 }
 
 .doc pre.highlightjs code {
