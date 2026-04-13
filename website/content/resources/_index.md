@@ -6,6 +6,29 @@ Whether you're just getting started with supply chain security or looking to dee
 
 These conference presentations, demos, educational videos and articles showcase how organizations are using Conforma to secure their software supply chains.
 
+## Ask an OpenShift Expert Ep 169 | Red Hat Trusted Artifact Signer - Conforma
+
+**Speakers:** Veda Shankar, Stefano Pentassuglia & Joe Stuart, Red Hat  
+**Event:** Ask an OpenShift Expert, Episode 169  
+**Format:** YouTube Live  
+**Link:** [Watch on YouTube](https://www.youtube.com/watch?v=c92FKFC3KEg)
+
+{{< rawhtml >}}
+<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/c92FKFC3KEg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<br>
+{{< /rawhtml >}}
+
+A follow-up to [Episode 166](https://www.youtube.com/watch?v=IWUSABfc6tM) on Red Hat Trusted Artifact Signer, this episode focuses on the deploy phase of the secure software supply chain. After images are signed and attested during the build phase, Conforma validates them against organizational policies before they reach production. This episode covers:
+
+- How Conforma bridges artifact generation and production deployment with policy-as-code
+- Conforma's origins in [Konflux](https://konflux-ci.dev/), Red Hat's internal cloud-native software factory
+- Hands-on demo: writing Rego policy rules, configuring policy evaluation, and validating SBOMs
+- Using AI to generate complete Conforma policy environments from natural language requirements
+- How customers can use Conforma in their own pipelines to validate Red Hat or third-party artifacts
+
+*Ideal for administrators and developers looking to add policy-driven gating to their deployment pipelines.*
+
 ## From Passive Data to Active Defense: Supply Chain Policy-as-Code with Conforma
 
 **Speaker:** Stefano Pentassuglia, Red Hat  
