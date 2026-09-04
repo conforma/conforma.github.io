@@ -41,7 +41,7 @@ jobs:
     if: >-
       github.event_name != 'issue_comment'
       || github.event.comment.user.type != 'Bot'
-    uses: conforma/.fullsend/.github/workflows/dispatch.yml@main
+    uses: conforma/.fullsend/.github/workflows/dispatch.yml@ca5794c8df0e30d4f0fe3219fd9347910863b225 # main
     with:
       event_action: ${{ github.event.action }}
 
