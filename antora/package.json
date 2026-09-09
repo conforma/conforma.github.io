@@ -9,7 +9,7 @@
   "homepage": "https://enterprise-contract.github.io/enterprise-contract.github.io/",
   "devDependencies": {
     "antora": "^3.1.12",
-    "toml": "^3.0.0"
+    "toml": "^4.0.0"
   },
   "overrides": {
     "glob-parent": "6.0.2"
