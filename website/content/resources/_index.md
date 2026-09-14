@@ -6,6 +6,33 @@ Whether you're just getting started with supply chain security or looking to dee
 
 These conference presentations, demos, educational videos and articles showcase how organizations are using Conforma to secure their software supply chains.
 
+## From SBOM to Enforcement: Writing License Policies with Conforma
+
+**Speaker:** Luiz Carvalho, Red Hat  
+**Event:** Red Hat Summit 2026  
+**Format:** Presentation, demo video and git repository  
+**Link:** [Watch the demo](https://drive.google.com/file/d/19gXsZUJz7evXxuzRGuAuIkKjg5LUTVMI/view?usp=sharing)  
+**Slides:** [View presentation](https://docs.google.com/presentation/d/1I8pfAhvMKCYJRI-1zh5JCIok6QF61fLZphvT0m8xA34/edit?usp=sharing)  
+**Git:** [Open demo git repository](https://github.com/lcarva/summit-demo-2026-sbom-conforma)  
+
+{{< rawhtml >}}
+<br>
+<iframe src="https://drive.google.com/file/d/19gXsZUJz7evXxuzRGuAuIkKjg5LUTVMI/preview" width="640" height="480"></iframe>
+<br>
+{{< /rawhtml >}}
+
+This demo walks through building a Conforma policy rule for SBOM license compliance. The demo uses a git repository whose git history
+is structured as a step-by-step guide showing how the policy evolves. This demo covers:
+
+- Writing Rego policy rules to detect disallowed licenses
+- Improving violation messages
+- Adding fine-grained exclusions for specific packages
+- Validating local SBOM files with `ec validate input`
+- Validating container images with `ec validate image`
+- Supporting SBOMs from different sources
+
+*Great starting point for anyone looking to write their first Conforma policy.*
+
 ## Ask an OpenShift Expert Ep 169 | Red Hat Trusted Artifact Signer - Conforma
 
 **Speakers:** Veda Shankar, Stefano Pentassuglia & Joe Stuart, Red Hat  
