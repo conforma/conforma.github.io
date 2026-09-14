@@ -1,5 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
-  // Load Mermaid from CDN
+  // Load Mermaid from CDN.
+  //
+  // The version below is the source of truth for the mermaid runtime used
+  // by the built site. Mermaid is intentionally not an npm dependency of
+  // this project (see antora/package.json) — bump the version by editing
+  // the URL here directly.
   const script = document.createElement('script');
   script.src = 'https://cdn.jsdelivr.net/npm/mermaid@11.10.1/dist/mermaid.min.js';
   script.onload = function() {
