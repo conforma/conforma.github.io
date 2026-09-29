@@ -6,6 +6,30 @@ Whether you're just getting started with supply chain security or looking to dee
 
 These conference presentations, demos, educational videos and articles showcase how organizations are using Conforma to secure their software supply chains.
 
+## Closing the Gap Between Build Evidence and Compliance Enforcement
+
+**Speakers:** Cuiping Huo & Simon Baird, Red Hat  
+**Event:** DevConf.US 2026  
+**Format:** Conference Talk with Live Demo  
+**Link:** [Watch on YouTube](https://www.youtube.com/live/wBda6wMuLaQ?t=2800)  
+**Slides:** [View presentation](https://github.com/cuipinghuo/devconf-us-2026/blob/main/slides.pdf)  
+**Git:** [Open demo git repository](https://github.com/cuipinghuo/devconf-us-2026)  
+
+{{< rawhtml >}}
+<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wBda6wMuLaQ?start=2800" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<br>
+{{< /rawhtml >}}
+
+Build systems produce plenty of security evidence — SBOMs, SLSA provenance, signatures, attestations — but that evidence doesn't enforce anything on its own. This talk shows how Conforma closes that gap with policy-as-code, through a series of live demos that build from the basics to real-world enforcement (the talk starts at 46:40 in the recording). This talk covers:
+
+- Validating structured data against a Rego policy with `ec validate input`
+- Validating a real signed container image, and catching a source-correlation attack where the signature is valid but the source doesn't match
+- Writing one custom rule that different teams tune through `ruleData`
+- Rolling out a rule as a warning first with `effective_on`, giving teams a grace period before it becomes a hard failure
+
+*Great for anyone who has build evidence but wants to turn it into enforceable, auditable decisions.*
+
 ## From SBOM to Enforcement: Writing License Policies with Conforma
 
 **Speaker:** Luiz Carvalho, Red Hat  
