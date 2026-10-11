@@ -20,8 +20,32 @@ base: https://raw.githubusercontent.com/fullsend-ai/agents/ce2eedd097dcccf17e29f
 # forward the upstream read-only guarantee explicitly.
 readonly_repo: true
 
-env:
-    runner:
-        REVIEW_FINDING_SEVERITY_THRESHOLD: "high"
-    sandbox:
-        REVIEW_FINDING_SEVERITY_THRESHOLD: "high"
+# REVIEW_FINDING_SEVERITY_THRESHOLD is intentionally NOT overridden here —
+# inherit the upstream default ("low") from the base harness.
+#
+# History: this file previously pinned the threshold to "high" for both
+# runner and sandbox. On PR #582 (a security-sensitive change to
+# .github/workflows/preview.yaml) that override caused the review agent to
+# post zero correctness/security findings while CodeRabbit caught a
+# fork-origin guard regression on the `prepare` job. See issue #583.
+#
+# Verified behavior of the pinned base harness
+# (fullsend-ai/agents@ce2eedd097dcccf17e29f4a7cd337ec4d95d7194,
+# scripts/post-review.sh):
+#   * The severity filter (jq pass around line 726) drops EVERY finding
+#     below the threshold with no category-based exemption, so a
+#     `high`-only threshold throws away `low`/`medium` findings from the
+#     correctness, security, intent-coherence and style-conventions
+#     sub-agents.
+#   * The `[protected-path]` medium that reached the comment on PR #582
+#     is not evidence of a category exemption; it is appended by the
+#     post-script itself after severity filtering (around line 875), so
+#     it survives any threshold.
+# A per-category exemption (issue #583 option 3) is therefore not
+# available at this pinned harness commit. Dropping the override to
+# inherit the upstream `low` default (issue #583 option 1) is the
+# minimal change that restores sub-agent findings on governance paths.
+#
+# If signal noise is too high after one week of observation, step up to
+# "medium" for both runner and sandbox (issue #583 option 2) by adding
+# the env.runner / env.sandbox keys back here.
