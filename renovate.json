@@ -2,5 +2,14 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "github>conforma/.github//config/renovate/renovate.json"
+  ],
+  "packageRules": [
+    {
+      "description": "Auto-merge low-risk Go toolchain updates",
+      "matchManagers": ["asdf"],
+      "matchDepNames": ["golang"],
+      "automerge": true,
+      "platformAutomerge": true
+    }
   ]
 }

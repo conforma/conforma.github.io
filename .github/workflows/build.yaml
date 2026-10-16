@@ -76,6 +76,23 @@ jobs:
           path: public
           name: website
 
+  test-go-toolchain:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Setup Go environment
+        uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e # v7.0.0
+        with:
+          go-version-file: .tool-versions
+          cache: true
+          cache-dependency-path: website/go.sum
+
+      - name: Verify Go module
+        working-directory: website
+        run: go version && go mod verify
+
   pull-request-data:
     runs-on: ubuntu-latest
     if: github.event_name == 'pull_request'
