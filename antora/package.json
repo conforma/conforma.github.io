@@ -20,7 +20,7 @@
     "build:fast": "npm run build:base"
   },
   "engines": {
-    "node": "24"
+    "node": "26"
   },
   "dependencies": {
     "@antora/lunr-extension": "^1.0.0-alpha.10",

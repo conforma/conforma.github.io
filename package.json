@@ -8,7 +8,7 @@
   },
   "homepage": "https://conforma.dev/",
   "engines": {
-    "node": "24"
+    "node": "26"
   },
   "devDependencies": {
     "wrangler": "^4.59.1"
